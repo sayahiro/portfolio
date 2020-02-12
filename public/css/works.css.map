@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../templete/page/works/works.sass"
+    ],
+    "names": [],
+    "file": "works.css"
+}
