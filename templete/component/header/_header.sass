@@ -1,0 +1,59 @@
+@import ../../../layout/_setting
+
+header
+    position: fixed
+    width: 100%
+
+
+.header
+    display: flex
+    background-color: #fff
+    width: 80vw
+    height: 30px
+    justify-content: flex-end
+    align-items: center
+    border-radius: 40px
+    padding: 15px 20px
+    font-weight: bold
+    margin: 10px auto 0
+    box-shadow: $shadow
+    @media screen and ( min-width: 769px)
+        margin: 20px auto 0
+        padding: 20px 40px
+        
+
+    .header-title
+        font-size: 2rem
+        line-height: normal
+        width: 100%
+
+    .header-menu
+        display: none
+        align-items: center
+        position: relative
+        font-size: 1.6rem
+        @media screen and ( min-width: 415px)
+            display: flex
+
+    .header-menu-item
+        margin-right: 20px
+        line-height: 1.2
+        > a
+            height: 100%
+        &:last-child
+            margin-right: 0
+
+    .header-icon
+        width: 20px
+        height: 20px
+        appearance: none
+
+    .menu
+        background: url('../../../img/menu.svg') center / contain no-repeat
+        @media screen and ( min-width: 415px)
+            display: none
+
+    .close
+        display: none
+        background: url('../../../img/close.svg') center / contain no-repeat
+        margin-left: 20px

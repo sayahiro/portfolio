@@ -1,4 +1,64 @@
 @import ../../../layout/default/_default
-    
-h1
-    color: blue
+
+.main-visual
+    width: 100%
+    height: 33vh
+    background: url('../../../img/main-visual.png') center / cover no-repeat
+    margin-bottom: 40px
+    @media screen and ( min-width: 769px)
+        height: 45vh
+
+.section-title
+    font-size: 2rem
+    margin-bottom: 20px
+    font-weight: bold
+
+.card
+    box-shadow: $shadow
+    border-radius: 4px
+    padding: 20px
+    margin: 0 auto 40px
+
+.carousel-wrapper
+    overflow-x: scroll
+    +hidden-scrollbar
+    margin: 0 10px 40px
+    @media screen and ( min-width: 769px)
+        margin: 0 30px 30px
+
+.carousel-wrapper
+    overflow-x: scroll
+    +hidden-scrollbar
+    margin: 0 10px 40px
+    @media screen and ( min-width: 769px)
+        margin: 0 30px 40px
+
+.carousel-wrapper.double-carousel
+    margin-bottom: 0
+
+
+.carousel
+    width: 720px
+    padding: 10px
+    @media screen and ( min-width: 769px)
+        width: 800px
+
+.carousel-skills
+    width: 1080px
+    @media screen and ( min-width: 769px)
+        width: 1200px
+
+.title-carousel
+    margin-bottom: 4px
+
+.carousel-tool.carousel
+    margin-bottom: 40px
+    width: 540px
+    padding: 10px
+    @media screen and ( min-width: 769px)
+        width: 600px
+
+.carousel-work.carousel
+    width: 750px
+    @media screen and ( min-width: 769px)
+        width: 930px

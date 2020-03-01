@@ -1,0 +1,26 @@
+mixin card-item(img, text, link, star)
+
+    a.card-item.card(href=link target='_blank')
+        img.card-item-image(src=img)
+        .card-item-description
+            p.card-item-description-text=text
+            if star === '3'
+                .star.yellow
+                .star.yellow
+                .star.yellow
+            else if star === '2'
+                .star.yellow
+                .star.yellow
+                .star.gray
+            else if star === '1'
+                .star.yellow
+                .star.gray
+                .star.gray
+            else if star === '0'
+                .star.gray
+                .star.gray
+                .star.gray
+            else
+                .star
+                .star
+                .star

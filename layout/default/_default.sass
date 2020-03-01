@@ -1,2 +1,50 @@
+@import ../../templete/component/header/_header
+@import ../../templete/component/introduction/_introduction
+@import ../../templete/component/job-description/_job-description
+@import ../../templete/component/card-item/_card-item
+@import ../../templete/component/footer/_footer
+@import ../../layout/_setting
+@import ../_mixin
+
+
+html
+    line-height: 1
+    color: #333
+    font-size: 10px
+    font-family: Helvetica Neue,Roboto,Ubuntu,Segoe UI,Noto Sans JP,HiraginoGYSans,Hiragino Kaku Gothic ProN,Meiryo,sans-serif
+    @media screen and ( min-width: 768px )
+        font-size: 12px
+
+body
+    width: 100%
+    height: 100%
+    display: block
+    position: relative
+    margin: 0
+    padding: 0
+
+ul 
+    margin: 0
+    padding: 0
+
 h1
     font-size: 100px
+
+li
+    list-style: none
+
+a
+    text-decoration: none
+    color: #333
+    &:hover
+        opacity: 0.7
+
+section
+    margin: 0 20px
+    @media screen and ( min-width: 769px)
+        margin: 0 40px
+.font-futura
+    font-family: futura, helvetica
+
+h2,p
+    margin: 0

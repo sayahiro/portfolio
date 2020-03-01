@@ -1,0 +1,29 @@
+.job-description
+    @media screen and ( min-width: 769px )
+        display: flex
+        justify-content: center
+        
+    .job-description-section
+        flex: 1
+        &:first-child
+            margin-bottom: 30px
+        @media screen and ( min-width: 769px )
+            &:first-child
+                margin-right: 16px
+                margin-bottom: 0
+
+    .job-description-title
+        font-size: 1.8rem
+        font-weight: bold
+        margin-bottom: 4px
+
+    .job-description-list
+        font-size: 1.4rem
+        font-weight: bold
+        line-height: 1.8
+        > li
+            list-style-type: none
+            padding: 10px 4px 0 4px
+            border-bottom: 1px solid #f0f0f0
+            @media screen and ( min-width: 769px )
+                min-height: 50px

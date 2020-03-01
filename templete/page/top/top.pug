@@ -1,10 +1,67 @@
-include ../../component/header/_header.pug
+include ../../../layout/default/_default
+include ../../component/header/_header
+include ../../component/introduction/_introduction
+include ../../component/job-description/_job-description
+include ../../component/card-item/_card-item-career
+include ../../component/card-item/_card-item-work
+include ../../component/card-item/_card-item
+include ../../component/footer/_footer
 
 doctype html
 html(lang='ja')
     head
     link(rel="stylesheet" href="../css/top.css")
+    script(src='./top.js')
+    meta(name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no")
 
     body
-    +header
-    h1 こんにちは！
+        +header
+        main.wrapper
+            .main-visual
+            section#introduction
+                .section-title.font-futura INTRODUCTION
+                +introduction
+            section#career
+                .section-title.title-carousel.font-futura CAREER
+            .carousel-wrapper
+                .carousel
+                    +card-item-career('2013', '../../../img/school.svg', '福岡県立久留米高等学校卒業', 'http://kurume.fku.ed.jp/html/index.html')
+                    +card-item-career('2017', '../../../img/school.svg', '芝浦工業大学デザイン工学部卒業', 'https://www.shibaura-it.ac.jp/faculty/design/')
+                    +card-item-career('2017', '../../../img/gyao-app.svg', '株式会社GYAO入社', 'http://www.gyao.co.jp/jp/')
+                    +card-item-career('2020', '../../../img/yahoo_logo.svg', 'ヤフー株式会社へ転籍', 'https://about.yahoo.co.jp/')
+            section#job-description
+                .section-title.font-futura JOB DESCRIPTION
+                +job-description
+            section#works
+                .section-title.title-carousel.font-futura WORKS
+            .carousel-wrapper
+                .carousel.carousel-work
+                    +card-item-work('../../../img/gyao-top.png', 'GYAO!', '#')
+                    +card-item-work('../../../img/music-app.png', 'Music APP', '#')
+                    +card-item-work('../../../img/gyao-lp.png', 'GYAO! LP', 'https://sayahiro.github.io/lp/templete/index')
+            section#skills
+                .section-title.title-carousel.font-futura SKILLS
+            .carousel-wrapper.double-carousel
+                .carousel.carousel-skills
+                    +card-item('../../../img/figma.svg', 'Figma', 'https://www.figma.com/', '2')
+                    +card-item('../../../img/sketch.svg', 'Sketch', 'https://www.sketch.com/', '2')
+                    +card-item('../../../img/html.svg', 'HTML', 'https://developer.mozilla.org/ja/docs/Web/HTML', '2')
+                    +card-item('../../../img/css3.svg', 'CSS', 'https://developer.mozilla.org/ja/docs/Web/CSS', '2')
+                    +card-item('../../../img/pug.svg', 'Pug', 'https://pugjs.org/api/getting-started.html', '2')
+                    +card-item('../../../img/sass.svg', 'Sass', 'https://sass-lang.com/', '2')
+            .carousel-wrapper
+                .carousel.carousel-skills
+                    +card-item('../../../img/github.svg', 'Github', 'https://github.co.jp/', '2')
+                    +card-item('../../../img/illustrator.svg', 'Illustrator', 'https://www.adobe.com/jp/products/illustrator.html', '1')
+                    +card-item('../../../img/photoshop.svg', 'Photoshop', 'https://www.adobe.com/jp/products/photoshop.html', '1')
+                    +card-item('../../../img/xd.svg', 'XD', 'https://www.adobe.com/jp/products/xd.html', '1')
+                    +card-item('../../../img/prott.svg', 'Prott', 'https://prottapp.com/ja/', '1')
+                    +card-item('../../../img/javascript.svg', 'Javascript', 'https://developer.mozilla.org/ja/docs/Web/JavaScript', '1')
+            section#tools
+                .section-title.title-carousel.font-futura TOOLS
+            .carousel-wrapper
+                .carousel.carousel-tool
+                    +card-item('../../../img/slack.svg', 'Slack', 'https://slack.com/intl/ja-jp/', '')
+                    +card-item('../../../img/vscode.svg', 'VScode', 'https://azure.microsoft.com/ja-jp/products/visual-studio-code/', '')
+                    +card-item('../../../img/sourcetree.svg', 'SoruceTree', 'https://www.sourcetreeapp.com/', '')
+        +footer
