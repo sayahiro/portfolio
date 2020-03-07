@@ -523,6 +523,9 @@ h2, p {
 }
 
 .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 720px;
   padding: 10px;
 }
@@ -560,7 +563,7 @@ h2, p {
 }
 
 .carousel-work.carousel {
-  width: 750px;
+  width: 690px;
 }
 
 @media screen and (min-width: 769px) {
