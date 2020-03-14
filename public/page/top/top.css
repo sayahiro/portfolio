@@ -230,13 +230,15 @@ header {
   }
 }
 
+.card-item-career.card:last-child {
+  visibility: hidden;
+}
+
 .card-item-career.card .card-item-year {
   margin-bottom: 4px;
 }
 
 .card-item-career.card .card-item-description {
-  position: absolute;
-  bottom: 10px;
   line-height: 1.6;
 }
 
