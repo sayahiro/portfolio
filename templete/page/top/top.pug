@@ -40,6 +40,7 @@ html(lang='ja')
         +header
         main.wrapper
             .main-visual
+                //- img(src="../../../img/main-visual-device.png")
             section#introduction
                 .section-title.font-futura INTRODUCTION
                 +introduction
@@ -47,10 +48,11 @@ html(lang='ja')
                 .section-title.title-carousel.font-futura CAREER
             .carousel-wrapper
                 .carousel
+                    +card-item-career('2010', '../../../img/school.svg', '福岡県小郡市立小郡中学校卒業', 'http://www.ogori-mii.ed.jp/~ogori-j/')
                     +card-item-career('2013', '../../../img/school.svg', '福岡県立久留米高等学校卒業', 'http://kurume.fku.ed.jp/html/index.html')
                     +card-item-career('2017', '../../../img/school.svg', '芝浦工業大学デザイン工学部卒業', 'https://www.shibaura-it.ac.jp/faculty/design/')
                     +card-item-career('2017', '../../../img/gyao-app.svg', '株式会社GYAO入社', 'http://www.gyao.co.jp/jp/')
-                    +card-item-career('2020', '../../../img/work.svg', 'ヤフー株式会社へ転籍予定', 'https://about.yahoo.co.jp/')
+                    //- +card-item-career('2020', '../../../img/work.svg', 'ヤフー株式会社へ転籍予定', 'https://about.yahoo.co.jp/')
             section#job-description
                 .section-title.font-futura JOB DESCRIPTION
                 +job-description
