@@ -237,6 +237,7 @@ header {
 .card-item-career.card .card-item-description {
   position: absolute;
   bottom: 10px;
+  left: 8px;
   line-height: 1.6;
 }
 
